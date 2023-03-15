@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+section .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    font-size: 40px;
+    transform: rotate(-30deg);
+    transform-origin: 0% 0%;
+}
+
+span {
+    color: red;
+    transition: 1s;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+span:hover{
+    transition: 0s;
+    color: chartreuse;
+    text-shadow: 5px 5px 120px #0f0;
+}
+
+section .row div {
+    animation: animate 80s linear infinite;
+    transform-origin: 10% 10%;
+}
+section .row div span:hover {
+    animation: smoke 5s linear infinite;
+    
+}
+
+@keyframes animate {
+    from { transform: translateX(-10%)}
+    to {transform: translateX(-80%);}
+}
+@keyframes smoke {
+    from { 
+        opacity: 1;
+        filter: blur(0);
+    }
+    to { 
+        opacity: 0;
+        filter: blur(20px);
+    }
+}
+
