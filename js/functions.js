@@ -1,6 +1,6 @@
 const section = document.getElementById("container");
 
-const colors = ["blue", "purple", "yellow", "teal", "auqua", "black"]
+const colors = ["blue", "purple", "teal", "green", "black"]
 let i = 0;
 const endOfColors = colors.length;
 section.addEventListener("click", ()=> {

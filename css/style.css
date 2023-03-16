@@ -17,16 +17,17 @@ section .row {
     width: 100%;
     display: flex;
     white-space: nowrap;
-    font-size: 40px;
+    font-size: 65px;
     transform: rotate(-30deg);
     transform-origin: 0% 0%;
 }
 
 span {
-    color: red;
+    color: whitesmoke;
     transition: 1s;
     cursor: pointer;
     user-select: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
     
 }
 
