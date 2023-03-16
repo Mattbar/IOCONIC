@@ -48,7 +48,7 @@ section .row div span:hover {
 
 @keyframes animate {
     from { transform: translateX(-10%)}
-    to {transform: translateX(-80%);}
+    to {transform: translateX(-60%);}
 }
 @keyframes smoke {
     from { 
